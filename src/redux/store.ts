@@ -22,6 +22,7 @@ const rootReducer = combineReducers({
 const persistConfig = {
   key: 'root',
   storage,
+  blacklist: ['memeSlice'],
 };
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);
